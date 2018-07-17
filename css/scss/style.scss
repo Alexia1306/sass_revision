@@ -47,6 +47,8 @@ header {
 
 body {
     main {
+        margin-bottom: 2rem;
+        padding: 80px;
         .hSpring {
             font-size: 3rem;
             color: black;
@@ -54,11 +56,12 @@ body {
         }
 
         .card {
-            max-width: 180px;
+            box-shadow: 4px 11px 12px 0px rgba(0,0,0,0.20);
             display: flex;
             justify-content: start;
             background-color: lightgray;
-
+            margin-bottom: 2rem;
+            max-width: auto;
             .card-body {
                 padding: 6px;
 
@@ -68,15 +71,22 @@ body {
                 padding: 0;
 
                 li {
+                    font-size: 1rem;
                     h3 {
                         font-weight: normal;
-                        font-size: 1.5rem;
+                        color: grey;
+                        font-size: 1.2rem;
+                        margin: 0;
+                    }
+                    .price{
+
                     }
                     a {
+                        color: brown;
+                    }
+                    .price{
                         color: black;
                     }
-                    color: black;
-
                     a:hover {
                         text-decoration: none;
                         color: inherit;
@@ -87,10 +97,51 @@ body {
         }
     }
 }
+
+
+// ------------------------------------Footer
+
+footer{
+    background-color: #0f3e57;
+    padding: 80px;
+    .row{
+        text-align: left;
+        color: grey;
+        ul{
+            list-style: none;
+            padding: 0;
+            li{
+                form{
+                    input[type="mail"] {
+                        max-width: 60%;
+                    }
+                }
+                a{
+                    color: grey;
+                    margin: 3%;
+                }
+                a:hover{
+                    text-decoration: none;
+                    color: white;
+
+                }
+            }
+        }
+        h4{
+            color: white;
+
+        }
+    }
+}
 @media screen and (max-width: 990px) {
     header {
         h2 {
             width: auto;
+        }
+    }
+    footer{
+        .row{
+            text-align: center;
         }
     }
 }
