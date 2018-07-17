@@ -1,10 +1,22 @@
+@import "animation";
+
 header {
     background-color: #281400;
-    color: white;
+    color: $wi;
     text-align: center;
+
+    #btnbrowse:hover {
+        text-decoration: none;
+        animation: animBrowse 4s;
+    }
 
     #nav {
         margin-bottom: 10rem;
+        font-size: 1.5rem;
+
+        a:hover {
+            color: white;
+        }
 
         a {
             color: #9a9187;
@@ -30,6 +42,7 @@ header {
     }
 
     h1 {
+        box-shadow:$shadow;
         font-size: 3rem;
         font-weight: bold;
         margin-bottom: 1.5rem;
@@ -49,87 +62,95 @@ body {
     main {
         margin-bottom: 2rem;
         padding: 80px;
+
         .hSpring {
             font-size: 3rem;
             color: black;
             margin: 4rem auto;
         }
+    
 
         .card {
-            box-shadow: 4px 11px 12px 0px rgba(0,0,0,0.20);
+            box-shadow: $shadow;
             display: flex;
             justify-content: start;
             background-color: lightgray;
             margin-bottom: 2rem;
             max-width: auto;
+
             .card-body {
                 padding: 6px;
 
-            ul {
-                list-style-type: none;
-                text-align: left;
-                padding: 0;
+                ul {
+                    list-style-type: none;
+                    text-align: left;
+                    padding: 0;
 
-                li {
-                    font-size: 1rem;
-                    h3 {
-                        font-weight: normal;
-                        color: grey;
-                        font-size: 1.2rem;
-                        margin: 0;
-                    }
-                    .price{
+                    li {
+                        font-size: 1rem;
 
-                    }
-                    a {
-                        color: brown;
-                    }
-                    .price{
-                        color: black;
-                    }
-                    a:hover {
-                        text-decoration: none;
-                        color: inherit;
+                        h3 {
+                            font-weight: normal;
+                            color: grey;
+                            font-size: 1.2rem;
+                            margin: 0;
+                        }
+
+                        .price {}
+
+                        a {
+                            color: brown;
+                        }
+
+                        .price {
+                            color: black;
+                        }
+
+                        a:hover {
+                            text-decoration: none;
+                            color: inherit;
+                        }
                     }
                 }
             }
         }
-        }
     }
 }
-
-
 // ------------------------------------Footer
 
-footer{
+footer {
     background-color: #0f3e57;
     padding: 80px;
-    .row{
+
+    .row {
         text-align: left;
         color: grey;
-        ul{
+
+        ul {
             list-style: none;
             padding: 0;
-            li{
-                form{
+
+            li {
+                form {
                     input[type="mail"] {
                         max-width: 60%;
                     }
                 }
-                a{
+
+                a {
                     color: grey;
                     margin: 3%;
                 }
-                a:hover{
+
+                a:hover {
                     text-decoration: none;
                     color: white;
-
                 }
             }
         }
-        h4{
-            color: white;
 
+        h4 {
+            color: white;
         }
     }
 }
@@ -139,8 +160,9 @@ footer{
             width: auto;
         }
     }
-    footer{
-        .row{
+
+    footer {
+        .row {
             text-align: center;
         }
     }
