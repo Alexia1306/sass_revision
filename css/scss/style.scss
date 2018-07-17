@@ -2,7 +2,7 @@
 
 header {
     background-color: #281400;
-    color: $wi;
+    color:white;
     text-align: center;
 
     #btnbrowse:hover {
@@ -16,6 +16,7 @@ header {
 
         a:hover {
             color: white;
+            animation: transitionHover 1s;
         }
 
         a {
@@ -42,7 +43,6 @@ header {
     }
 
     h1 {
-        box-shadow:$shadow;
         font-size: 3rem;
         font-weight: bold;
         margin-bottom: 1.5rem;
@@ -68,8 +68,20 @@ body {
             color: black;
             margin: 4rem auto;
         }
-    
 
+        .out::before{
+            content: "";
+            display: block;
+            background-color: black;
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            z-index: 2;
+            rotate: 90deg;
+            transform: rotate(35deg);
+            top: 4%;
+        }
         .card {
             box-shadow: $shadow;
             display: flex;
@@ -77,6 +89,11 @@ body {
             background-color: lightgray;
             margin-bottom: 2rem;
             max-width: auto;
+            position: relative;
+            a img .out{
+                z-index: 1;
+            }
+
 
             .card-body {
                 padding: 6px;
