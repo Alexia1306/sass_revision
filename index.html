@@ -4,9 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/product.css"> -->
     <title>Boutique sass</title>
 </head>
 
@@ -14,7 +16,7 @@
 
     <header>
         <nav id="nav" class="navbar navbar-expand-lg navbar-light flex-row ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button  id="btnToggle"class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
@@ -77,9 +79,9 @@
                 <div class="col-sm-12 col-md-6 col-lg-3">
                     <h4>Contact Us</h4>
                     <ul>
-                        <li><i class="fab fa-pinterest-square"></i><a href="#">@californiatheme</a></li>
-                        <li><i class="fas fa-envelope"></i><a href="#">support@smallvictorie.com</a></li>
-                        <li><i class="fas fa-phone"></i><a href="#">+1 917 (123) 4567</a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-square"></i>@californiatheme</a></li>
+                        <li><a href="#"><i class="fas fa-envelope d-inline"></i>support@smallvictorie.com</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i>+1 917 (123) 4567</a></li>
                     </ul>
 
                 </div>
@@ -94,9 +96,9 @@
                 <div class="col-sm-12 col-md-6 col-lg-3">
                     <h4>Follow Us</h4>
                     <ul>
-                        <li><i class="fab fa-twitter"></i><a href="#">Pinterest</a></li>
-                        <li><i class="fab fa-instagram"></i><a href="#">Instagram</a></li>
-                        <li><i class="fab fa-vimeo-v"></i><a href="#">Vimeo</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i>Pinterest</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-vimeo-v"></i>Vimeo</a></li>
                     </ul>
                 </div>
             </div>
@@ -107,6 +109,8 @@
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bxslider/dist/jquery.bxslider.js"></script>
+    <script src="script/catalog.js"></script>
     <script src="script/script.js"></script>
 
 </body>

@@ -1,18 +1,19 @@
 @import "animation";
 
+
+
 header {
-    background-color: #281400;
+    background-color:$brown;
     color:white;
     text-align: center;
 
-    #btnbrowse:hover {
-        text-decoration: none;
-        animation: animBrowse 4s;
-    }
 
     #nav {
         margin-bottom: 10rem;
         font-size: 1.5rem;
+        #btnToggle{
+            background-color: $lightB;
+        }
 
         a:hover {
             color: white;
@@ -50,10 +51,14 @@ header {
 
     #btnbrowse {
         color: white;
-        background-color: #a28f61;
+        background-color: $lightB;
         margin-bottom: 10rem;
         font-size: 1.1rem;
         padding: 1rem 2rem;
+    }
+    #btnbrowse:hover {
+        text-decoration: none;
+        animation: animBrowse 2s;
     }
 }
 // -----------------------------------MAIN
@@ -61,7 +66,7 @@ header {
 body {
     main {
         margin-bottom: 2rem;
-        padding: 80px;
+        padding: 60px;
 
         .hSpring {
             font-size: 3rem;
@@ -71,16 +76,17 @@ body {
 
         .out::before{
             content: "";
-            display: block;
-            background-color: black;
-            width: 1px;
-            height: 100%;
-            position: absolute;
-            left: 50%;
-            z-index: 2;
-            rotate: 90deg;
-            transform: rotate(35deg);
-            top: 4%;
+                display: block;
+                background-color: black;
+                width: 1px;
+                height: 109%;
+                position: absolute;
+                left: 50%;
+                z-index: 2;
+                rotate: 90deg;
+                transform: rotate(24deg);
+                top: -5%;
+            
         }
         .card {
             box-shadow: $shadow;
@@ -136,8 +142,8 @@ body {
 // ------------------------------------Footer
 
 footer {
-    background-color: #0f3e57;
-    padding: 80px;
+    background-color: $bgBlue;
+    padding: 80px 40px;
 
     .row {
         text-align: left;
@@ -157,6 +163,9 @@ footer {
                 a {
                     color: grey;
                     margin: 3%;
+                    i{
+                        margin-right: 3%;
+                    }
                 }
 
                 a:hover {
@@ -168,9 +177,11 @@ footer {
 
         h4 {
             color: white;
+            margin-top: 5%;
         }
     }
 }
+
 @media screen and (max-width: 990px) {
     header {
         h2 {

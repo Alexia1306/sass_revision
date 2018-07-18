@@ -1,20 +1,11 @@
 @keyframes animBrowse {
-    from {
-
-    }
-    50% {
-        color: blue;
-    }
+    from {}
     to {
-        transform: rotate(360deg);
-        color:yellow;
+        transform: rotate(15deg);
+        color: blue;
+
     }
 }
-
-
-$wi:red;
-    $shadow: 4px 11px 12px 0 rgba(0,0,0,0.20);
-
 
 @keyframes transitionHover{
     from{}
@@ -22,3 +13,13 @@ $wi:red;
         transform: scale(1.5);
     }
 }
+
+
+
+
+
+$shadow: 4px 11px 12px 0 rgba(0,0,0,0.20);
+$wi:white;
+$brown: #281400;
+$lightB: #a28f61;
+$bgBlue:#0f3e57;

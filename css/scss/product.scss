@@ -1,0 +1,74 @@
+@import "animation";
+main{
+    h2{
+        color: white;
+        background-color: $brown;
+        text-align: left;
+    }
+    .productImg  {
+        background-color: $wi;
+        box-shadow: $shadow;
+        margin: 2% 0;
+        #mainPIC{
+            max-width: 100%;
+            height: auto;
+        }
+
+    }
+
+    .productDesc , .comments{
+        text-align: left;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        background-color: $wi;
+        box-shadow: $shadow;
+        margin: 2% 0;
+        button{
+            align-self: center;
+            background-color: $lightB;
+            border-radius: 20px 0px 20px 0px;
+            -moz-border-radius: 20px 0px 20px 0px;
+            -webkit-border-radius: 20px 0px 20px 0px;
+            border: 2px outset #e3a436;
+        }
+        button:hover{
+            color: $lightB;
+            background-color: $brown;
+        }
+        .media{
+            box-shadow: $shadow;
+            border: solid 1px lightgray;
+            margin-bottom: 3%;
+            img{
+                margin: 2%;
+            }
+        }
+    }
+    .listProduct{
+        padding: 0;
+        list-style: none;
+        li{
+            margin-bottom: 2%;
+            select{
+                margin-left: 10%;
+                // background-color: $brown;
+                // color: $lightB;
+            }
+        }
+
+    }
+    .titleP{
+        font-size: 1rem;
+        font-weight: bold;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 700px){
+body main {
+            padding: 0;
+
+        }
+
+}
