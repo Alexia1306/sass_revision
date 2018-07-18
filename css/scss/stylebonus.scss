@@ -1,0 +1,125 @@
+header {
+    background-color: #18bc9c;
+    color: white;
+    text-align: center;
+    padding-bottom: 5rem;
+
+    .navbar {
+        background-color: #2c3e50;
+        padding: 20px 10%;
+    }
+
+    .navbar-light {
+        .navbar-brand {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-top: 6rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        // padding-bottom: 6rem;
+    }
+}
+
+main {
+    text-align: center;
+
+    .image {
+        padding: 8% 10%;
+
+        .img-fluid {
+            padding: 15px 0;
+        }
+    }
+
+    section {
+        padding: 8% 25%;
+
+        h2 {
+            font-size: 2.6rem;
+            font-weight: bold;
+            margin-bottom: 4%;
+        }
+
+        p {
+            text-align: left;
+            font-size: 1.2rem;
+        }
+
+        button {
+            margin: 5%;
+            border: solid white 2px;
+            background-color: #18bc9c;
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 8px;
+            padding: 1%;
+        }
+
+        button:hover {
+            border: solid white 2px;
+            background-color: white;
+            color: #18bc9c;
+            cursor: pointer;
+        }
+    }
+
+    .secAbout {
+        background-color: #18bc9c;
+        color: white;
+    }
+
+    .contactFooter {
+        background-color: #2c3e50;
+        color: white;
+        padding: 8% 5%;
+        text-align: center;
+
+        h3 {
+            font-weight: bold;
+            font-style: 2rem;
+            margin-bottom: 5%;
+        }
+
+        p {
+            text-align: center;
+
+            a {
+                color:#18bc9c;
+
+            }
+            a:hover {
+                text-decoration: none;
+            }
+
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    }
+}
+
+footer {
+    background-color: #233140;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    p {
+        margin: 0;
+    }
+}
